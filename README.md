@@ -1,27 +1,20 @@
 # Cars
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+Reproduced using
+(https://phpenthusiast.com/blog/develop-angular-php-app-getting-the-list-of-items)
+# INSTRUCTION 
+1. Download the whole code. 
+2. Paste api folder (src/app/api) in the xamp/htdocs directory. You may update database crednetials and create your table in the xamp. 
+3. Run Angular app project in the cmd. (ng serve)
+4.  If you come across error saying 
+"XMLHttpRequest cannot load http://myApiUrl/login. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access."
+in Windows, paste this command in run window
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security.
+(https://stackoverflow.com/questions/20035101/why-does-my-javascript-get-a-no-access-control-allow-origin-header-is-present) 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If database was created , and the credentials are ok and the table contains record if you run
+localhost/api/list.php you should see some output. After serving the app you should see the output in the localhost:4200.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
